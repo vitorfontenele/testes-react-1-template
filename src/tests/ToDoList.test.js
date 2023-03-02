@@ -98,7 +98,7 @@ describe("Testando componente TodoList.js", () => {
         await user.click(deleteButton);
 
         // seleciona tarefa criada
-        const tarefa = screen.getByText("bananinha123");
+        const tarefa = screen.queryByText("bananinha123");
         
         // assercoes
         expect(tarefa).not.toBeInTheDocument();
